@@ -99,6 +99,12 @@ namespace MissionPlanner.ActionPanelPlugin
         {
             setPanelVisibility(panelStatus);
             Host.FPGMapControl.OnPolygonClick += FDGMapControl_OnPolygonClick;
+
+
+            Host.MainForm.MenuConfigTune.Visible = false;
+            Host.MainForm.MenuInitConfig.Visible = false;
+
+
             return true;
         }
 

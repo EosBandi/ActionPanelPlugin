@@ -66,5 +66,10 @@ namespace MissionPlanner.ActionPanelPlugin
         {
 
         }
+
+        private void ActionPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,6 +60,10 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label16 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.toggleSwitch7 = new JCS.ToggleSwitch();
+            this.label18 = new System.Windows.Forms.Label();
+            this.toggleSwitch8 = new JCS.ToggleSwitch();
             this.SuspendLayout();
             // 
             // label1
@@ -101,7 +105,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             // toggleSwitch1
             // 
-            this.toggleSwitch1.Location = new System.Drawing.Point(181, 88);
+            this.toggleSwitch1.Location = new System.Drawing.Point(181, 105);
             this.toggleSwitch1.Name = "toggleSwitch1";
             this.toggleSwitch1.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toggleSwitch1.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,7 +129,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             // toggleSwitch2
             // 
-            this.toggleSwitch2.Location = new System.Drawing.Point(181, 195);
+            this.toggleSwitch2.Location = new System.Drawing.Point(181, 212);
             this.toggleSwitch2.Name = "toggleSwitch2";
             this.toggleSwitch2.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toggleSwitch2.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,7 +139,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             // toggleSwitch3
             // 
-            this.toggleSwitch3.Location = new System.Drawing.Point(181, 142);
+            this.toggleSwitch3.Location = new System.Drawing.Point(181, 159);
             this.toggleSwitch3.Name = "toggleSwitch3";
             this.toggleSwitch3.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toggleSwitch3.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -149,11 +153,11 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 94);
+            this.label3.Location = new System.Drawing.Point(22, 108);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 20);
+            this.label3.Size = new System.Drawing.Size(100, 20);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Enable IFP Control";
+            this.label3.Text = "IFP Control";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -162,11 +166,11 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(30, 134);
+            this.label4.Location = new System.Drawing.Point(22, 162);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 40);
+            this.label4.Size = new System.Drawing.Size(138, 20);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Enable Front\r\navoidance";
+            this.label4.Text = "Front avoidance";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -175,18 +179,18 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(30, 187);
+            this.label5.Location = new System.Drawing.Point(22, 216);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 40);
+            this.label5.Size = new System.Drawing.Size(130, 20);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Enable LIDAR\r\nAltitude";
+            this.label5.Text = "LIDAR Altitude";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(11, 304);
+            this.button1.Location = new System.Drawing.Point(9, 367);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 48);
             this.button1.TabIndex = 12;
@@ -197,7 +201,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(154, 304);
+            this.button2.Location = new System.Drawing.Point(152, 367);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 48);
             this.button2.TabIndex = 13;
@@ -208,7 +212,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(13, 425);
+            this.button3.Location = new System.Drawing.Point(11, 488);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(127, 48);
             this.button3.TabIndex = 14;
@@ -219,7 +223,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(156, 425);
+            this.button4.Location = new System.Drawing.Point(154, 488);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(127, 48);
             this.button4.TabIndex = 15;
@@ -229,14 +233,14 @@ namespace MissionPlanner.ActionPanelPlugin
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(50, 509);
+            this.label6.Location = new System.Drawing.Point(49, 560);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(178, 2);
             this.label6.TabIndex = 16;
             // 
             // toggleSwitch4
             // 
-            this.toggleSwitch4.Location = new System.Drawing.Point(172, 557);
+            this.toggleSwitch4.Location = new System.Drawing.Point(171, 608);
             this.toggleSwitch4.Name = "toggleSwitch4";
             this.toggleSwitch4.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toggleSwitch4.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,7 +250,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             // toggleSwitch5
             // 
-            this.toggleSwitch5.Location = new System.Drawing.Point(172, 613);
+            this.toggleSwitch5.Location = new System.Drawing.Point(171, 664);
             this.toggleSwitch5.Name = "toggleSwitch5";
             this.toggleSwitch5.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toggleSwitch5.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -256,7 +260,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             // toggleSwitch6
             // 
-            this.toggleSwitch6.Location = new System.Drawing.Point(172, 672);
+            this.toggleSwitch6.Location = new System.Drawing.Point(171, 718);
             this.toggleSwitch6.Name = "toggleSwitch6";
             this.toggleSwitch6.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toggleSwitch6.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -270,7 +274,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(15, 563);
+            this.label7.Location = new System.Drawing.Point(14, 614);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(114, 20);
             this.label7.TabIndex = 20;
@@ -283,7 +287,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(31, 619);
+            this.label8.Location = new System.Drawing.Point(30, 670);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 20);
             this.label8.TabIndex = 21;
@@ -296,7 +300,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(19, 668);
+            this.label9.Location = new System.Drawing.Point(18, 714);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 40);
             this.label9.TabIndex = 22;
@@ -309,7 +313,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(80, 511);
+            this.label10.Location = new System.Drawing.Point(79, 562);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(119, 20);
             this.label10.TabIndex = 23;
@@ -322,7 +326,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(87, 262);
+            this.label11.Location = new System.Drawing.Point(85, 325);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(112, 20);
             this.label11.TabIndex = 25;
@@ -332,7 +336,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // label12
             // 
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Location = new System.Drawing.Point(54, 260);
+            this.label12.Location = new System.Drawing.Point(52, 323);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(178, 2);
             this.label12.TabIndex = 24;
@@ -343,7 +347,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(91, 777);
+            this.label13.Location = new System.Drawing.Point(93, 825);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(105, 20);
             this.label13.TabIndex = 27;
@@ -353,7 +357,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // label14
             // 
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label14.Location = new System.Drawing.Point(54, 775);
+            this.label14.Location = new System.Drawing.Point(56, 823);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(178, 2);
             this.label14.TabIndex = 26;
@@ -363,7 +367,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(36, 840);
+            this.label15.Location = new System.Drawing.Point(36, 853);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(56, 13);
             this.label15.TabIndex = 28;
@@ -375,7 +379,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(216, 835);
+            this.label16.Location = new System.Drawing.Point(216, 848);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(27, 20);
             this.label16.TabIndex = 29;
@@ -385,7 +389,7 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(11, 363);
+            this.button5.Location = new System.Drawing.Point(9, 426);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(127, 48);
             this.button5.TabIndex = 30;
@@ -396,12 +400,58 @@ namespace MissionPlanner.ActionPanelPlugin
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(156, 363);
+            this.button6.Location = new System.Drawing.Point(154, 426);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(127, 48);
             this.button6.TabIndex = 31;
-            this.button6.Text = "BRAKE";
+            this.button6.Text = "LAND";
             this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(22, 273);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(95, 20);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "Smart RTL";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // toggleSwitch7
+            // 
+            this.toggleSwitch7.Location = new System.Drawing.Point(181, 269);
+            this.toggleSwitch7.Name = "toggleSwitch7";
+            this.toggleSwitch7.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch7.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch7.Size = new System.Drawing.Size(98, 32);
+            this.toggleSwitch7.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Fancy;
+            this.toggleSwitch7.TabIndex = 32;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(17, 780);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(111, 20);
+            this.label18.TabIndex = 35;
+            this.label18.Text = "Pilot Camera";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // toggleSwitch8
+            // 
+            this.toggleSwitch8.Location = new System.Drawing.Point(171, 774);
+            this.toggleSwitch8.Name = "toggleSwitch8";
+            this.toggleSwitch8.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch8.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch8.Size = new System.Drawing.Size(98, 32);
+            this.toggleSwitch8.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Fancy;
+            this.toggleSwitch8.TabIndex = 34;
             // 
             // ActionPanel
             // 
@@ -412,6 +462,10 @@ namespace MissionPlanner.ActionPanelPlugin
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(298, 911);
             this.ControlBox = false;
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.toggleSwitch8);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.toggleSwitch7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label16);
@@ -447,6 +501,7 @@ namespace MissionPlanner.ActionPanelPlugin
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ActionPanel";
             this.Text = "ActionPanel";
+            this.Load += new System.EventHandler(this.ActionPanel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -483,5 +538,9 @@ namespace MissionPlanner.ActionPanelPlugin
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label17;
+        private JCS.ToggleSwitch toggleSwitch7;
+        private System.Windows.Forms.Label label18;
+        private JCS.ToggleSwitch toggleSwitch8;
     }
 }

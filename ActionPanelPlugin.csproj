@@ -188,7 +188,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="ToggleSwitch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=501b8bae11ef234b, processorArchitecture=MSIL">
-      <HintPath>..\mp-latest\packages\JCS.ToggleSwitch.1.0.0\lib\net40\ToggleSwitch.dll</HintPath>
+      <HintPath>..\SecopPlanner\packages\JCS.ToggleSwitch.1.0.0\lib\net40\ToggleSwitch.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
